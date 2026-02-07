@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentru Iubita Mea ❤️</title>
+    <link rel="stylesheet" href="aspect.css">
+</head>
+<body>
+    <div class="container">
+        <div id="first-page">         
+            <!-- Secțiunea de Header cu animație -->
+            <header class="hero">
+                <h1 class="animate-pop">Do you wanna be my Valentine? 🌹</h1>
+            </header>
+
+            <!-- Secțiunea Interactivă -->
+            <div class="buttons">
+                <button id="btnYes" onclick="handleYes()">DA! ❤️</button>
+                <button id="btnNo" onclick="moveButton()">NU 😢</button>
+            </div>
+
+        </div>
+
+        <div id="second-page" class="hidden">
+            </header>
+            <h1 class="text">Yeeey! Știam eu! 🥰</h1>
+                <img src="https://i0.wp.com/www.dogwonder.co.uk/wp-content/uploads/2009/12/tumblr_ku2pvuJkJG1qz9qooo1_r1_400.gif?resize=320%2C320" alt="Love">
+            <!-- Aici poți pune orice: poze cu voi, un video sau un text lung -->
+        </div>
+
+        <div id="second-page-buttons" class="buttons hidden">
+            <button id="btnNext" onclick="goNext()">Next</button>
+         </div>
+
+
+        <div id="third-page" class="hidden">
+            <h1>Amintiri 📸</h1>
+
+            <div class="third-content">
+                <!-- Image on the left (red framed area) -->
+                <div class="image-column">
+                    <div class="image-frame">
+                        <img class="gallery-image" src="https://raw.githubusercontent.com/Iulian-svg/For-My-Ladie/refs/heads/main/IMG-20251022-WA0015.jpg" alt="Memorie 1">
+                        <img class="gallery-image" src="https://raw.githubusercontent.com/Iulian-svg/For-My-Ladie/refs/heads/main/IMG-20251103-WA0006.jpeg" alt="Memorie 2">
+                        <img class="gallery-image" src="https://raw.githubusercontent.com/Iulian-svg/For-My-Ladie/refs/heads/main/IMG-20251103-WA0042.jpg" alt="Memorie 3">
+                        <img class="gallery-image" src="https://raw.githubusercontent.com/Iulian-svg/For-My-Ladie/refs/heads/main/RIMG0284.jpg" alt="Memorie 4">
+                    </div>
+                </div>
+
+                <!-- Text on the right inside a white panel with orange border -->
+                <div class="text-column panel-white">
+                    <div class="caption" data-index="0">"Chiar și în cele mai obișnuite momente, frumusețea ta reușește să îmi facă lumea mai luminoasă și inima mai plină."</div>
+                    <div class="caption" data-index="1">"Sunt recunoscător pentru fiecare zi în care mă lași să fac parte din universul tău și să te iubesc așa cum meriți."</div>
+                    <div class="caption" data-index="2">"Uneori mă opresc doar să te privesc și realizez cât de norocos sunt că tu m-ai ales pe mine să-ți fiu alături."</div>
+                    <div class="caption" data-index="3">„I-aș spune acestui puști că viitorul arată minunat, pentru că la capătul drumului îl așteaptă cea mai frumoasă și iubitoare fată din lume.”</div>
+                </div>
+            </div>
+
+            <!-- Controls centered under the content -->
+            <div class="gallery-controls centered-controls">
+                <button id="prevBtn" class="control">Previous</button>
+                <button id="nextBtn" class="control">Next</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="interactiune.js"></script>
+</body>
+</html>
