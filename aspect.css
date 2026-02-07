@@ -1,5 +1,5 @@
 .container {
-  font-family: 'Pacifico', sans-serif;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   position: relative;
   text-align: center;
   background-color: 	#FFD1DC;
@@ -79,7 +79,18 @@ h1.animate-pop {
     text-align: center;
     color: #ff4d6d; /* O culoare roz/roșie să iasă în evidență */
     margin-top: 0px;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Make second-page images responsive and contained inside viewport */
+#second-page img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 12px auto 0 auto;
+  border-radius: 12px;
+  object-fit: contain;
+  max-height: calc(100vh - 220px);
 }
 
 #second-page h1 {
@@ -129,7 +140,7 @@ h1.animate-pop {
   justify-content: center;
   color: #d63384;
   font-style: italic;
-  font-family: "Dancing Script" , cursive;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-size: clamp(14px, 2.4vw, 26px);
   box-sizing: border-box;
   max-height: calc(100vh - 240px);
@@ -230,6 +241,19 @@ h1.animate-pop {
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive tweaks for small screens (phones) */
+@media (max-width: 600px) {
+  .container { padding: 12px; border-radius: 16px; }
+  h1.animate-pop { font-size: clamp(20px, 6vw, 32px); }
+  .buttons { flex-direction: column; gap: 12px; margin-top: 24px; }
+  #second-page img { max-width: 100%; max-height: calc(60vh); }
+  .third-content { flex-direction: column; gap: 12px; align-items: stretch; }
+  .image-column { max-width: 100%; flex: none; }
+  .image-frame { max-width: 100%; max-height: 50vh; }
+  .text-column.panel-white { width: 100%; padding: 12px; font-size: clamp(13px, 3.6vw, 18px); }
+  #btnNo, #btnYes, #second-page-buttons button { width: 100%; box-sizing: border-box; }
 }
 
 
